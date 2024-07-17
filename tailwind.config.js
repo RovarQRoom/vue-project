@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['node_modules/preline/dist/*.js', './src/**/*.{vue,js,ts,jsx,tsx}'],
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {},
@@ -11,6 +11,7 @@ export default {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('tailwindcss-children'),
+    require('preline/plugin'),
   ],
 }
 
